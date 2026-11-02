@@ -1,0 +1,9 @@
+{
+  "product": "ATLAS Open Data Run 2 2015+2016 leading-jet azimuth (record 93933)",
+  "mantissa_bits": 23,
+  "step_law": "u(e)=2^(e-b)",
+  "quantizer": "float32, full mantissa",
+  "alpha": 1e-06,
+  "on_grid_threshold": 0.999,
+  "b_range": [8, 16]
+}

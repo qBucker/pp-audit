@@ -6,6 +6,11 @@ data products*. It recovers the storage lattice of a delivered array, certifies
 a min-entropy floor, and verifies the values against a declared precision
 profile.
 
+The package accompanies the manuscript *A computational-physics audit of
+storage precision in public HEP data products* (EPJ C, Computing, Software and
+Data Science section). The measured profiles for the two products are in
+`profiles/` (`cms_lead.json`, `atlas_lead.json`).
+
 ## Install
 
 ```
@@ -42,8 +47,10 @@ python make_example.py          # writes values.npy and profile.json
 python -m pp_audit verify --input values.npy --profile profile.json --out audit.json
 ```
 
-`examples/profile_cms_lead.json` is the profile of the CMS PFNanoAOD
-leading-jet azimuth branch (record 31316, Run2016G), measured in the paper.
+`profiles/cms_lead.json` is the profile of the CMS PFNanoAOD leading-jet
+azimuth branch (record 31316, Run2016G), measured in the paper;
+`profiles/atlas_lead.json` is the ATLAS Open Data profile (record 93933,
+full float32).
 
 ## Output
 

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "pp-audit: precision-passport audit for public HEP data products"
+version: "0.1.0"
+date-released: "2026-11-02"
+license: MIT
+repository-code: "https://github.com/qBucker/pp-audit"
+authors:
+  - family-names: Zhu
+    given-names: Junchen
+    affiliation: "Independent Researcher, Chengdu, China"
+keywords:
+  - precision provenance
+  - data products
+  - HEP open data
+  - entropy certification
+  - reproducible software

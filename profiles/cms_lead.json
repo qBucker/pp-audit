@@ -1,0 +1,9 @@
+{
+  "product": "CMS PFNanoAOD Run2016G leading-jet azimuth (record 31316)",
+  "mantissa_bits": 12,
+  "step_law": "u(e)=2^(e-b)",
+  "quantizer": "float32 mantissa lattice, round-to-nearest",
+  "alpha": 1e-06,
+  "on_grid_threshold": 0.999,
+  "b_range": [8, 16]
+}
