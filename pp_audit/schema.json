@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Precision passport",
+  "description": "Schema for pp-audit profiles and audit results.",
+  "definitions": {
+    "profile": {
+      "type": "object",
+      "required": ["product", "mantissa_bits", "step_law", "alpha",
+                   "on_grid_threshold", "b_range"],
+      "properties": {
+        "product": {"type": "string"},
+        "mantissa_bits": {"type": "integer", "minimum": 1, "maximum": 52},
+        "step_law": {"type": "string"},
+        "quantizer": {"type": "string"},
+        "alpha": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+        "on_grid_threshold": {"type": "number", "exclusiveMinimum": 0,
+                              "maximum": 1},
+        "b_range": {
+          "type": "array",
+          "items": {"type": "integer"},
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "scan": {"type": "object"}
+      }
+    },
+    "audit": {
+      "type": "object",
+      "required": ["verdict", "issues", "declared_mantissa_bits", "scan",
+                   "floors", "n"],
+      "properties": {
+        "verdict": {"enum": ["pass", "fail"]},
+        "issues": {"type": "array", "items": {"type": "string"}},
+        "declared_mantissa_bits": {"type": "integer"},
+        "n": {"type": "integer"},
+        "input": {"type": "string"},
+        "scan": {
+          "type": "object",
+          "required": ["octaves", "b_global"],
+          "properties": {
+            "b_global": {"type": ["integer", "null"]},
+            "octaves": {"type": "object"}
+          }
+        },
+        "floors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["b", "n", "n_max", "h_floor", "h_cap", "eta"],
+            "properties": {
+              "b": {"type": "integer"},
+              "n": {"type": "integer"},
+              "n_max": {"type": "integer"},
+              "h_floor": {"type": "number"},
+              "h_cap": {"type": "number"},
+              "eta": {"type": "number"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "oneOf": [{"$ref": "#/definitions/profile"},
+            {"$ref": "#/definitions/audit"}]
+}

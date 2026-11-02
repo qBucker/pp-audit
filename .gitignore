@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+examples/values.npy
+examples/audit.json
+examples/profile.json
