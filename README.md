@@ -52,6 +52,26 @@ azimuth branch (record 31316, Run2016G), measured in the paper;
 `profiles/atlas_lead.json` is the ATLAS Open Data profile (record 93933,
 full float32).
 
+## Passport protocol
+
+The two-stage commitment is also implemented:
+
+```
+python -m pp_audit passport commit  --profile profiles/cms_lead.json \
+    --round R --out plan.json
+python -m pp_audit passport deliver --input values.npy --plan plan.json \
+    --out data.json
+python -m pp_audit passport verify  --input values.npy --plan plan.json \
+    --data data.json --out passport.json
+python -m pp_audit passport demo    --out demo/
+```
+
+`C_plan` is committed before release; `C_data` binds the delivered array;
+`verify` recomputes both commitments, checks the delivered hash, and audits
+the values against the committed profile. The synthetic demo exercises the
+honest release, a mantissa truncation (hash + audit fail) and a single-value
+flip (hash only).
+
 ## Output
 
 The audit result contains:

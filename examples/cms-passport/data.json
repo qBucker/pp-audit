@@ -1,0 +1,14 @@
+{
+  "c_data": "ba887ee3ecd14ad91a269143cc4676d7db97f4a59321e0159a28165bd5228234",
+  "entries": [
+    {
+      "n": 5211771,
+      "path": "*.npz",
+      "sha256": "88ccfd7e8e9f1f86f4cd041d04a0b4f970bc096c723d7f59cd9fc64722ac5dcc"
+    }
+  ],
+  "h_raw": "a267206860fd1a4423cf86fa3111ffe8e55c582c646de9ef8ceb063f17b14b5b",
+  "plan_sha256": "3de13af19a7516c5953c9001e6503973f0ae5743042bb5748d9534ef271a4d63",
+  "round": "cms-31316-retrospective-2026-11-02",
+  "v": "pp-audit/data/v1"
+}

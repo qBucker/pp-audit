@@ -1,0 +1,18 @@
+{
+  "c_plan": "3de13af19a7516c5953c9001e6503973f0ae5743042bb5748d9534ef271a4d63",
+  "profile": {
+    "alpha": 1e-06,
+    "b_range": [
+      8,
+      16
+    ],
+    "mantissa_bits": 12,
+    "on_grid_threshold": 0.999,
+    "product": "CMS PFNanoAOD Run2016G leading-jet azimuth (record 31316)",
+    "quantizer": "float32 mantissa lattice, round-to-nearest",
+    "step_law": "u(e)=2^(e-b)"
+  },
+  "round": "cms-31316-retrospective-2026-11-02",
+  "schedule": {},
+  "v": "pp-audit/plan/v1"
+}

@@ -1,0 +1,175 @@
+{
+  "audit": {
+    "declared_mantissa_bits": 12,
+    "floors": [
+      {
+        "b": 8,
+        "eta": 0.8124395472828764,
+        "h_cap": 9.651496129472319,
+        "h_floor": 7.841257146030925,
+        "n": 5211771,
+        "n_max": 21863
+      },
+      {
+        "b": 9,
+        "eta": 0.8276958260247036,
+        "h_cap": 10.651496129472319,
+        "h_floor": 8.816198887282525,
+        "n": 5211771,
+        "n_max": 10935
+      },
+      {
+        "b": 10,
+        "eta": 0.8354762254484739,
+        "h_cap": 11.651496129472319,
+        "h_floor": 9.734548007079036,
+        "n": 5211771,
+        "n_max": 5654
+      },
+      {
+        "b": 11,
+        "eta": 0.834504360392068,
+        "h_cap": 12.651496129472319,
+        "h_floor": 10.557728685528021,
+        "n": 5211771,
+        "n_max": 3104
+      },
+      {
+        "b": 12,
+        "eta": 0.828465661252008,
+        "h_cap": 13.651496129472319,
+        "h_floor": 11.309795767982513,
+        "n": 5211771,
+        "n_max": 1777
+      },
+      {
+        "b": 13,
+        "eta": 0.8285614455269684,
+        "h_cap": 14.651496129472319,
+        "h_floor": 12.139664812168368,
+        "n": 5211771,
+        "n_max": 946
+      },
+      {
+        "b": 14,
+        "eta": 0.8268952451474337,
+        "h_cap": 15.651496129472319,
+        "h_floor": 12.942147728904123,
+        "n": 5211771,
+        "n_max": 503
+      },
+      {
+        "b": 15,
+        "eta": 0.7776189137932712,
+        "h_cap": 16.65149612947232,
+        "h_floor": 12.948518333233126,
+        "n": 5211771,
+        "n_max": 498
+      },
+      {
+        "b": 16,
+        "eta": 0.7332228978699643,
+        "h_cap": 17.65149612947232,
+        "h_floor": 12.942481143792154,
+        "n": 5211771,
+        "n_max": 498
+      }
+    ],
+    "issues": [],
+    "scan": {
+      "b_global": 12,
+      "octaves": {
+        "-1": {
+          "b": 12,
+          "n_unique": 8192,
+          "on_grid_fraction": 1.0
+        },
+        "-2": {
+          "b": 12,
+          "n_unique": 8192,
+          "on_grid_fraction": 1.0
+        },
+        "-3": {
+          "b": 12,
+          "n_unique": 8192,
+          "on_grid_fraction": 1.0
+        },
+        "-4": {
+          "b": 12,
+          "n_unique": 8191,
+          "on_grid_fraction": 1.0
+        },
+        "-5": {
+          "b": 12,
+          "n_unique": 8183,
+          "on_grid_fraction": 1.0
+        },
+        "-6": {
+          "b": 12,
+          "n_unique": 7895,
+          "on_grid_fraction": 1.0
+        },
+        "-7": {
+          "b": 12,
+          "n_unique": 6620,
+          "on_grid_fraction": 1.0
+        },
+        "-8": {
+          "b": 12,
+          "n_unique": 4576,
+          "on_grid_fraction": 1.0
+        },
+        "0": {
+          "b": 12,
+          "n_unique": 8192,
+          "on_grid_fraction": 1.0
+        },
+        "1": {
+          "b": 12,
+          "n_unique": 4678,
+          "on_grid_fraction": 1.0
+        }
+      }
+    },
+    "verdict": "pass"
+  },
+  "checks": {
+    "audit": {
+      "b_global": 12,
+      "issues": [],
+      "ok": true,
+      "verdict": "pass"
+    },
+    "c_data": {
+      "committed": "ba887ee3ecd14ad91a269143cc4676d7db97f4a59321e0159a28165bd5228234",
+      "h_raw_committed": "a267206860fd1a4423cf86fa3111ffe8e55c582c646de9ef8ceb063f17b14b5b",
+      "h_raw_recomputed": "a267206860fd1a4423cf86fa3111ffe8e55c582c646de9ef8ceb063f17b14b5b",
+      "ok": true,
+      "recomputed": "ba887ee3ecd14ad91a269143cc4676d7db97f4a59321e0159a28165bd5228234"
+    },
+    "c_plan": {
+      "committed": "3de13af19a7516c5953c9001e6503973f0ae5743042bb5748d9534ef271a4d63",
+      "ok": true,
+      "recomputed": "3de13af19a7516c5953c9001e6503973f0ae5743042bb5748d9534ef271a4d63"
+    },
+    "delivered": {
+      "committed": {
+        "n": 5211771,
+        "path": "*.npz",
+        "sha256": "88ccfd7e8e9f1f86f4cd041d04a0b4f970bc096c723d7f59cd9fc64722ac5dcc"
+      },
+      "entry": {
+        "n": 5211771,
+        "path": "*.npz",
+        "sha256": "88ccfd7e8e9f1f86f4cd041d04a0b4f970bc096c723d7f59cd9fc64722ac5dcc"
+      },
+      "ok": true
+    },
+    "plan_data_link": {
+      "c_plan": "3de13af19a7516c5953c9001e6503973f0ae5743042bb5748d9534ef271a4d63",
+      "ok": true,
+      "plan_sha256": "3de13af19a7516c5953c9001e6503973f0ae5743042bb5748d9534ef271a4d63"
+    }
+  },
+  "verdict": "pass"
+}
